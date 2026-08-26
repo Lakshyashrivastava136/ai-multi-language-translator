@@ -1,0 +1,6 @@
+flask
+werkzeug
+deep-translator
+langdetect
+nltk
+gunicorn
