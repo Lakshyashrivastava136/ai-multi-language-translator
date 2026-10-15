@@ -9,7 +9,6 @@ translation engines, language detection, voice input and a built-in accuracy che
 
 ![App screenshot](docs/demo.png)
 
-
 > The demo runs on a free server, so the first request after a pause can take 30-50 seconds.
 
 ## Features
@@ -47,13 +46,6 @@ pytest --cov=app
 | POST | `/api/detect` | `{text}` | Detect language |
 | POST | `/api/translate` | `{text, source, target}` | Translate text |
 | POST | `/api/evaluate` | `{hypothesis, reference}` | BLEU and similarity score |
-
-Example:
-```bash
-curl -X POST http://127.0.0.1:5000/api/translate \
-  -H "Content-Type: application/json" \
-  -d '{"text": "Hello", "source": "en", "target": "hi"}'
-```
 
 ## Optional engines
 ```bash
